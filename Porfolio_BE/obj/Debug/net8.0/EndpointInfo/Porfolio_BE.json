@@ -5,12 +5,40 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/api/AboutUs": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "AboutUs"
         ],
-        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AboutUs"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AboutUs"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AboutUs"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Projects": {
+      "get": {
+        "tags": [
+          "Projects"
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -19,7 +47,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/Project"
                   }
                 }
               },
@@ -27,7 +55,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/Project"
                   }
                 }
               },
@@ -35,7 +63,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/Project"
                   }
                 }
               }
@@ -47,23 +75,50 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "AboutUs": {
+        "required": [
+          "description",
+          "imageUrl",
+          "title"
+        ],
         "type": "object",
         "properties": {
-          "date": {
+          "imageUrl": {
             "type": "string",
-            "format": "date"
+            "nullable": true
           },
-          "temperatureC": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Project": {
+        "required": [
+          "description",
+          "shortDescription",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+          "title": {
+            "type": "string",
+            "nullable": true
           },
-          "summary": {
+          "shortDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
             "type": "string",
             "nullable": true
           }

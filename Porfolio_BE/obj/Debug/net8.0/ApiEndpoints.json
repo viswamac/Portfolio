@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "Porfolio_BE.Controllers.WeatherForecastController",
+    "ContainingType": "Porfolio_BE.Controllers.AboutUsController",
     "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "RelativePath": "api/AboutUs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Porfolio_BE.WeatherForecast, Porfolio_BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Porfolio_BE.Models.AboutUs",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -17,7 +17,26 @@
         ],
         "StatusCode": 200
       }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    ]
+  },
+  {
+    "ContainingType": "Porfolio_BE.Controllers.ProjectsController",
+    "Method": "Get",
+    "RelativePath": "api/Projects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Porfolio_BE.Models.Project, Porfolio_BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

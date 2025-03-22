@@ -35,3 +35,6 @@ E:\My_Portfolio\Porfolio_BE\obj\Debug\net8.0\refint\Porfolio_BE.dll
 E:\My_Portfolio\Porfolio_BE\obj\Debug\net8.0\Porfolio_BE.pdb
 E:\My_Portfolio\Porfolio_BE\obj\Debug\net8.0\Porfolio_BE.genruntimeconfig.cache
 E:\My_Portfolio\Porfolio_BE\obj\Debug\net8.0\ref\Porfolio_BE.dll
+E:\My_Portfolio\Porfolio_BE\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\My_Portfolio\Porfolio_BE\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\My_Portfolio\Porfolio_BE\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
