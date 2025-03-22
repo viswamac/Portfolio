@@ -1,1 +1,17 @@
-<p>contact-us works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Phone Number</mat-label>
+        <input matInput formControlName="phoneNumber">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="myForm.invalid">
+        Submit
+      </button>
+</form>
+
+<h3>First Name: {{ myForm.value.name }}</h3>
+<h3>First Name: {{ myForm.value.phoneNumber }}</h3>
