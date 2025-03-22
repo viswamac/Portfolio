@@ -9,16 +9,15 @@ import { ApiService } from '../services/api.service';
 })
 export class AboutComponent {
   data: any;
-  aboutContent: string = "";
+  aboutContent: any;
 
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.apiService.getAboutData().subscribe(response => {
       this.data = response;
-      this.aboutContent = this.data[0].title;
+      this.aboutContent = this.data;
       
-      this.aboutContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis libero, fuga saepe tempore voluptatum dolorem at perspiciatis fugit sit facilis veniam nemo quia quisquam sapiente corporis cupiditate ab amet exercitationem?";
     });
   }
 }

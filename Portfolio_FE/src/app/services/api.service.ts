@@ -7,17 +7,17 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private baseUrl = 'https://jsonplaceholder.typicode.com/todos';
+  private baseUrl = 'https://localhost:7189/api/';
 
   constructor(private http: HttpClient) { }
 
     // Example: Fetch data
     getAboutData(): Observable<any> {
-      return this.http.get<any>(`${this.baseUrl}`);
+      return this.http.get<any>(`${this.baseUrl}AboutUs`);
     }
 
     getProjectData(): Observable<any> {
-      return this.http.get<any>(`https://jsonplaceholder.typicode.com/users`);
+      return this.http.get<any>(`${this.baseUrl}Projects`);
     }
 
 }

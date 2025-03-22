@@ -1,5 +1,5 @@
 <div>
-    <img src="images/sunflower.jpg" alt="My Photo">
-    <h3>About Us</h3>
-    <p>{{this.aboutContent }}</p>
+    <img [src]="this.aboutContent?.imageUrl" alt="My Photo">
+    <h3>{{ this.aboutContent?.title }}</h3>
+    <p>{{this.aboutContent?.description }}</p>
 </div>

@@ -26,6 +26,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Use CORS before using any other middleware
+app.UseCors("AllowAngularApp");
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
