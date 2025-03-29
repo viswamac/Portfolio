@@ -1,7 +1,8 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
+/bin/
+/obj/
 /Porfolio_BE/.vs/Porfolio_BE
 /Porfolio_BE/obj/Release/net8.0
 /Porfolio_BE/obj/Porfolio_BE.csproj.nuget.dgspec.json
