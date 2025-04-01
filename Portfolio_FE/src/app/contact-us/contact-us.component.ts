@@ -4,10 +4,19 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormGroup,FormBuilder,ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
+import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-contact-us',
-  imports: [MatFormFieldModule, MatInputModule, ReactiveFormsModule, CommonModule],
+  imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    CommonModule,
+    HeaderComponent,
+    MatCardModule,
+  MatButtonModule],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })
