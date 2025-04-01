@@ -32,7 +32,7 @@
 .button{
   background-color: yellow;
   color: black !important;
-  border-radius: 5% !important;
+  border-radius: 10px !important;
 }
 
 .button-row{
