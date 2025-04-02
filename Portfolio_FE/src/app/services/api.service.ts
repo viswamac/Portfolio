@@ -20,4 +20,9 @@ export class ApiService {
       return this.http.get<any>(`${this.baseUrl}Projects`);
     }
 
+    // Submit Contact Form
+    postContactForm(formData: any): Observable<any> {
+      return this.http.post<any>(`${this.baseUrl}ContactUs`, formData);
+    }
+
 }

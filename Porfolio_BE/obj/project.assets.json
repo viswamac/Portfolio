@@ -1037,23 +1037,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Viswa\\.nuget\\packages\\": {},
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My_Portfolio\\Porfolio_BE\\Porfolio_BE.csproj",
+      "projectUniqueName": "C:\\Porfolio\\Porfolio_BE\\Porfolio_BE.csproj",
       "projectName": "Porfolio_BE",
-      "projectPath": "E:\\My_Portfolio\\Porfolio_BE\\Porfolio_BE.csproj",
-      "packagesPath": "C:\\Users\\Viswa\\.nuget\\packages\\",
-      "outputPath": "E:\\My_Portfolio\\Porfolio_BE\\obj\\",
+      "projectPath": "C:\\Porfolio\\Porfolio_BE\\Porfolio_BE.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Porfolio\\Porfolio_BE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Viswa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1061,7 +1061,8 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Asus\\Documents\\Sobi\\QuikTravel\\CT.QuikTravel.WebV2\\packages": {},
+        "https://api.nuget.org/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1080,7 +1081,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1114,7 +1115,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
