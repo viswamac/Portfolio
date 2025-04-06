@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp",
-        policy => policy.WithOrigins("http://localhost:4200") // Angular URL
+        policy => policy.WithOrigins("https://hemakanth.netlify.app/") // Angular URL
                         .AllowAnyMethod()
                         .AllowAnyHeader());
 });
